@@ -1,0 +1,35 @@
+.background1 {
+    background-color: rgb(211, 195, 104);
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;   
+}
+
+.background1 .background2 {
+    background-color: rgb(229, 247, 127);
+    font-style: italic;
+    font-size: 30px;
+    text-align:center;  
+  }
+
+  .background3 {
+    background-color: rgb(231, 177, 106);
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center; 
+
+  }
+
+  .background4 {
+    background-color: rgb(233, 197, 197);
+    font-style: oblique;
+    font-size: 20px;
+    text-align: left;  
+  }
+
+  .background5 {
+    background-color: rgb(233, 233, 233);
+    font-style:normal;
+    font-size: 10px;
+    text-align: center; 
+  }
