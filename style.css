@@ -1,35 +1,73 @@
-.background1 {
-    background-color: rgb(211, 195, 104);
-    font-style: italic;
-    font-size: 50px;
-    text-align: center;   
+body {
+  margin: 0;
 }
 
-.background1 .background2 {
-    background-color: rgb(229, 247, 127);
-    font-style: italic;
-    font-size: 30px;
-    text-align:center;  
-  }
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
 
-  .background3 {
-    background-color: rgb(231, 177, 106);
-    font-style: oblique;
-    font-size: 30px;
-    text-align: center; 
+section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(235, 179, 179);
+}
 
-  }
+.no-parallax {
+  background: linear-gradient(#000000, #757577);
+  z-index: 999;
+  font-family: 'Courier New', monospace;
+}
 
-  .background4 {
-    background-color: rgb(233, 197, 197);
-    font-style: oblique;
-    font-size: 20px;
-    text-align: left;  
-  }
+section h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
-  .background5 {
-    background-color: rgb(233, 233, 233);
-    font-style:normal;
-    font-size: 10px;
-    text-align: center; 
-  }
+.parallax h1 {
+  width: 60%;
+  font-size: 2rem;
+}
+.background3 {
+  border: 4px solid rgb(133, 133, 204);
+  border-radius: 25px;
+}
+ul {
+    list-style-type: none;
+    border: 4px solid rgb(133, 133, 204);
+    border-radius: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    list-style:none;
+    list-style-position:outside;
+    background-color: rgb(156, 156, 156);
+    
+}
+
+
+.parallax::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+.bg::after {
+  background: url('https://picsum.photos/1080/720');
+  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('https://picsum.photos/1080/720');
+
+}
